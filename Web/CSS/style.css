@@ -1,0 +1,89 @@
+body{
+    background: #e4ebf7;
+    background-position: center center;
+}
+header{
+    /*margin-top: -10px; /*quitar el margen de arriba cortar*/
+    height: 200px; /*altura del header*/
+    background-image:url(../Image/1.jpg);/*imagen de cabecera*/
+    padding-top: .1em;/*espacio desde arriba*/
+    /*****  borde curva  ****/
+    border:hidden 0px #000000;/*opx sin borde */
+    border-radius: 20px 20px 0px 0px;/*borde curva del cuadro*/
+    color: #f0ffff;
+    margin-left:4px;
+    margin-right:4px;
+    background-position:center;/*para que la figura salga centrada*/
+}
+.titulo-header{
+   text-align: right;
+    font-size: 4em;
+    margin-top: 2em;
+}
+
+/*cuadro de bienvenida*/
+.jumbotron{
+    background: #e4ebf7;
+    color: #3687b6; /*COLOR LETRAS*/
+    font-family: JennaSue;/*letra escrita*/
+    height: 150px;
+}
+/**************************login****************************************************************/
+.form-signin
+{
+    max-width: 300px;
+    padding: 15px;                              /* espacio alrededor de los input (cuadro celeste-imput)*/
+    margin: 0 auto;
+}
+.form-signin .checkbox
+{
+    font-weight: bolder;                            /*negrilla el sign in*/
+}
+.form-signin input[type="text"]
+{
+    margin-bottom: -1px;                            /*margen del texto */
+}
+.form-signin input[type="password"]
+{
+    margin-bottom: 10px;                            /*de password a sign in*/
+}
+.new-account
+{
+    display: block;
+    margin-top: 10px;
+}
+.register
+{
+    margin-top: 10px;                                 /*margen del cuadro*/
+    padding: 20px 20px 20px 20px;
+    background-color:   #e4ebf7;                       /*color cuadro login (celeste)*/
+    -webkit-border-radius: 13px;                        /*bordes redondos */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
