@@ -9,8 +9,10 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maform-signinxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
     <link href="../CSS/style.css" rel="stylesheet"/>
+
+
+
 
 </head>
         <header>
@@ -27,12 +29,12 @@
         <div class="col-sm-6 col-md-4 col-md-offset-4">
 
             <div class="account-wall">
-                <form class="form-signin">
+                <form class="form-signin" name="formulario" onsubmit="return doSubmit()" action="home.html" method="post">
                     <label>Usuario:</label>
-                    <input type="text" class="form-control" placeholder="Email" required autofocus>
+                    <input type="text" class="form-control" placeholder="Email"  name="email">
                     <label>Contraseña:</label>
-                    <input type="password" class="form-control" placeholder="Password" required>
-                    <button class="btn btn-lg btn-primary btn-block" type="submit" onclick = "location='home.html'">Sign in</button>
+                    <input type="password" class="form-control" placeholder="Password"  name="password">
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
                     <label class="checkbox pull-left">
                         <input type="checkbox" value="remember-me"> Remember me
                     </label>
@@ -42,5 +44,22 @@
         </div>
     </div>
 </div>
+
+<script type="text/javascript">;
+        function doSubmit()
+        {
+            var email = document.formulario.email.value;
+            if (email == "pepito@hotmail")
+            {
+                alert("Tu email es correcto.");
+                return true;
+            }
+            else
+            {
+                alert("Tu email no es correcto");
+                return false;
+            }
+        }
+</script>
 </body>
 </html>
